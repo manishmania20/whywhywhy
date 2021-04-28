@@ -12,7 +12,7 @@
     <script>
       function showOut() {
         const Http = new XMLHttpRequest();
-        const url = 'https://www.google.com/recaptcha/api/siteverify';
+        const url = `https://www.google.com/recaptcha/api/siteverify?secret=6LcCar0aAAAAAAoHwjRrVPU5Vh81g35Iq4B-A53k&response=${g-recaptcha-response}`;
         Http.open("GET", url);
         Http.send();
 
